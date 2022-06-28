@@ -231,7 +231,7 @@
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50vh);
+      height: calc(100vh - 70vh);
       overflow-y: auto;
     }
   }
@@ -302,6 +302,23 @@
     }
   }
   
+
+  /*landscape media query*/
+@media screen and (orientation:landscape) and
+(min-device-width: 320px) and (max-device-width: 850px) {
+  #desktop-only {
+    display: initial;
+  }
+
+  #mobile-only {
+    display: none;
+  }
+
+  .button-2 {
+    display: none;
+  }
+}
+
   /* Subheading - not displaying */
   #subheading {
 
