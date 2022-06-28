@@ -16,11 +16,42 @@
  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
 
 </head>
 
 <body>
 
+  <!-- NAV BAR -->
+
+  <!-- new navbar -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html" id="homeLogo">
+          TETRALEC
+        </a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="#about">Sobre Nós</a>
+      <a href="#projects">Serviços</a>
+      <a href="#contact">Contactos</a>
+    </div>
+  </div>
+  
+
+  <!-- old navbar 
     <nav id="navbar" class="nav">
         <ul>
           <li>
@@ -48,6 +79,7 @@
           </li>
         </ul>
       </nav>
+      -->
 
       <section class='FlexContainer' id="welcome-section">
         <div>
@@ -57,6 +89,14 @@
             <img class="welcome-img" id="desktop-only" src="1_1.png" alt="Company logo">
             <img class="welcome-img" id="mobile-only" src="2.png" alt="Company logo">
         </div>
+
+        <!-- contact btn subheading -->
+        <a href="#contact">
+         <div class="button button-2">
+          CONTACTOS
+      </div>
+    </a>
+        
     </section>
 
 
@@ -156,27 +196,31 @@
         </div>
       
       </section>
+
+      <!-- CONTACT SECTION -->
       
       <section id="contact">
-        <h4>CONTACTE-NOS!</h4>
-        <div class="parent">
-          <div class="div1"> 
-            <h5>Seg-Sex : 9h-20h</h5>
-            <h5>Sáb : 10h-13h</h5>
+        <div class="contact-wrap">
+          <div class="contact-in">
+            <h4>Informações</h4>
+            <h5><i class="fa fa-phone" aria-hidden="true"></i> 963073856</h5>
+            <h5><i class="fa fa-envelope" aria-hidden="true"></i> orcamentos.tetra@sapo.pt</h5>
+            <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Praceta Libânia do Carmo Galvão, Amadora</h5>
           </div>
-          <div class="div2"> 
-            <h5>Praceta Libânia do Carmo Galvão</h5>
+          <div class="contact-in">
+            <h6>Contacte-nos</h6>
+            <form>
+              <input type="text" placeholder="Nome" class="contact-in-input">
+              <input type="text" placeholder="Email" class="contact-in-input">
+              <input type="text" placeholder="Assunto" class="contact-in-input">
+              <textarea placeholder="Mensagem" class="contact-in-textarea"></textarea>
+              <input type="submit" value="ENVIAR" class="contact-in-btn">
+            </form>
           </div>
-          <div class="div3"> 
-            <div class="mapouter">
-              <div class="gmap_canvas">
-              <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=Praceta%20Libania%20do%20Carmo%20Galvao&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-              <br>
-            </div>
+          <div class="contact-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.3599818944776!2d-9.22315989999999!3d38.7554467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd1b2c8b0a83%3A0xf54b1d5f809c4351!2sPraceta%20Lib%C3%A2nia%20do%20Carmo%20Galv%C3%A3o%2C%20Amadora!5e0!3m2!1spt-PT!2spt!4v1656322592263!5m2!1spt-PT!2spt" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          </div>
-          </div>
+        </div>
 
       </section>
       
